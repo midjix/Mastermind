@@ -15,6 +15,8 @@ const InputSection = () => {
     setMessage,
     resetGame,
   } = useStore();
+  
+  console.log(codeSecret);
 
   // Vérifie la proposition actuelle et calcule les bien/mal placés
   const verifierProposition = () => {
@@ -55,12 +57,13 @@ const InputSection = () => {
     // Affiche un message de succès ou les résultats
     if (bienPlaces === 4) {
       setMessage("Bravo, vous avez trouvé le code secret !");
+      // Réinitialise le jeu
+      resetGame();
     } else {
       setMessage(`Bien placés : ${bienPlaces}, Mal placés : ${malPlaces}`);
     }
 
-    // Réinitialise le jeu
-    resetGame();
+    
   };
 
   return (
