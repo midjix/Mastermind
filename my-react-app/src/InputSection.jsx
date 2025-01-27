@@ -1,8 +1,9 @@
 import React from "react";
 import useStore from "./store";
+import './index.css'
 
 // Liste des couleurs disponibles
-const colors = ["rouge", "bleu", "vert", "jaune", "orange", "violet"];
+const colors = ["red", "blue", "green", "yellow", "orange", "purple"];
 
 // Composant pour gérer la sélection des couleurs
 const InputSection = () => {
@@ -69,14 +70,14 @@ const InputSection = () => {
         {proposition.map((color, index) => (
           <div key={index} className="flex flex-col items-center">
             <div
-              className={`w-10 h-10 rounded-full border ${color ? `bg-${color}` : "bg-gray-200"}`}
+              className={`w-10 h-10 rounded-full border ${color ? `bg-${color}-500`: "bg-gray-200"}`}
             ></div>
             <div className="flex gap-1 mt-2">
-              {colors.map((btnColor) => (
+              {colors.map((color) => (
                 <button
-                  key={btnColor}
-                  className={`w-6 h-6 rounded-full bg-${btnColor}`}
-                  onClick={() => setProposition(index, btnColor)}
+                  key={color}
+                  className={`bg-${color}-400 w-6 h-6 rounded-full `}
+                  onClick={() => setProposition(index, color)}
                 ></button>
               ))}
             </div>
