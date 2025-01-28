@@ -57,8 +57,6 @@ const InputSection = () => {
     // Affiche un message de succès ou les résultats
     if (bienPlaces === 4) {
       setMessage("Bravo, vous avez trouvé le code secret !");
-      // Réinitialise le jeu
-      resetGame();
     } else {
       setMessage(`Bien placés : ${bienPlaces}, Mal placés : ${malPlaces}`);
     }
@@ -71,7 +69,7 @@ const InputSection = () => {
       <div className="flex gap-2 mb-4">
         {/* Affiche les cercles de sélection */}
         {proposition.map((color, index) => (
-          <div key={index} className="flex flex-col items-center">
+          <div key={index} className="flex flex-col items-center border">
             <div
               className={`w-10 h-10 rounded-full border ${color ? `bg-${color}-500`: "bg-gray-200"}`}
             ></div>
