@@ -17,4 +17,6 @@ Le Mastermind est un jeu où le joueur doit deviner un code secret composé de c
 - **CSS** : Classes utilitaires Tailwind CSS pour le style.
 
 ---
+## lien du github
+[https://github.com/midjix/Mastermind.git](https://github.com/midjix/Mastermind.git]
    
