@@ -2,7 +2,7 @@
 # Projet Mastermind
 
 ## Description
-Le Mastermind est un jeu où le joueur doit deviner un code secret composé de couleurs. Ce projet utilise React avec un état global géré par un store (via `useStore`) pour centraliser la logique et les données.
+Le Mastermind est un jeu où le joueur doit deviner un code secret composé de couleurs. 
 
 ## Fonctionnalités Principales
 1. **Générer un mot de passe (code secret)** : Crée aléatoirement un code composé de couleurs.
@@ -13,8 +13,8 @@ Le Mastermind est un jeu où le joueur doit deviner un code secret composé de c
 
 ## Technologies Utilisées
 - **Langage** : JavaScript avec React
-- **État Global** : Géré avec un store personnalisé (`useStore`)
-- **CSS** : Classes utilitaires (ex. Tailwind CSS) pour le style.
+- **État Global** : Géré avec un store personnalisé : Zustand
+- **CSS** : Classes utilitaires Tailwind CSS pour le style.
 
 ---
    
