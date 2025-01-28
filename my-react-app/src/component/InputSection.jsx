@@ -1,9 +1,9 @@
-import React from "react";
-import useStore from "./store";
+import React, {useState} from "react";
+import useStore from "../stores/store";
 import './index.css'
 
 // Liste des couleurs disponibles
-const colors = ["red", "blue", "green", "yellow", "orange", "purple"];
+// const colors = ["red", "blue", "green", "yellow", "orange", "purple"];
 
 // Composant pour gérer la sélection des couleurs
 const InputSection = () => {
@@ -15,6 +15,9 @@ const InputSection = () => {
     setMessage,
     resetGame,
   } = useStore();
+
+
+  const [colors, setColors] = useState(["red", "blue", "green", "yellow", "orange", "purple"])
   
   console.log(codeSecret);
 
