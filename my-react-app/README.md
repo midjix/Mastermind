@@ -17,7 +17,4 @@ Le Mastermind est un jeu où le joueur doit deviner un code secret composé de c
 - **CSS** : Classes utilitaires (ex. Tailwind CSS) pour le style.
 
 ---
-
-## Comment démarrer ?
-1. **Installation des dépendances** :  
    
